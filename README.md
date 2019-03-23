@@ -65,10 +65,17 @@
 ***
 ---
 ___
-
-
-
-
+  
+### 链接
+[妙语连珠](https://www.baidu.com/)是什么意思  
+### 下面是带链接的列表
+* [不知道写些什么1](https://www.baidu.com/)
+* [不知道写些什么2](https://www.baidu.com/)
+### 参数式
+[name]: https://www.baidu.com/name "名称"
+[home]: https://www.baidu.com/home "首页"
+[也支持中文]: https://www.baidu.com/name "无题"
+这里是[name]，这里是[home]，这里是[也支持中文]
 
 
 
