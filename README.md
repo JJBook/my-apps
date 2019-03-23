@@ -82,6 +82,16 @@ ___
   
 [熊猫]: https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1553333317&di=7915146077a9dc51b013ca9eccc49415&src=http://pic.2265.com/upload/2017-4/20174151150135456.jpg "熊猫"
 参数式图片，这里是![熊猫]
+###
+### 代码框
+#### 单行代码用\`\`
+`brew install python3`   
+#### 多行用3个\`
+``` 可以写注释
+<p>第一段落</p>
+<p>第二段落</p>
+<p>第三段落</p>
+```
 
 
 
