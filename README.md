@@ -89,9 +89,15 @@ ___
 #### 单行代码用\`\`
 `brew install python3`
 #### 多行用3个\`
-```java 可以写注释
-public static void main(String[] args){
-    System.out.println("Hello");
+```c 可以写注释
+#include <stdio.h>
+
+int main()
+{
+   /* 我的第一个 C 程序 */
+   printf("Hello, World! \n");
+
+   return 0;
 }
 ```
 ### 
