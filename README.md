@@ -87,9 +87,9 @@ ___
 ###
 ### 代码框
 #### 单行代码用\`\`
-```brew install python3```
+`brew install python3`
 #### 多行用3个\`
-``` 可以写注释
+```java 可以写注释
 public static void main(String[] args){
     System.out.println("Hello");
 }
