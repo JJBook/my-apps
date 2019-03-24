@@ -87,9 +87,9 @@ ___
 ###
 ### 代码框
 #### 单行代码用\`\`
-`
+```shell
 brew install python3
-`
+```
 #### 多行用3个\`
 ```c 可以写注释
 #include <stdio.h>
@@ -133,7 +133,7 @@ ___下斜体加粗___
 * \*与js转义一样
 
 ### 流程图
-```flow
+```flowchart
 st=>start: 开始
 op=>operation: My Operation
 cond=>condition: Yes or No?
