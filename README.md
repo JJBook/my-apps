@@ -143,3 +143,8 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
+  
+```graphTB
+    a-->b
+```
+
