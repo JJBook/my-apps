@@ -162,9 +162,9 @@ cond3(yes)-o2-e
 cond3(no)-o4-e
 ```
 
-		第一行
-		第二行
-		第三行
+	第一行
+	第二行
+	第三行
   
 <table class="table table-bordered table-striped table-condensed">
    <tr>
@@ -186,9 +186,4 @@ cond3(no)-o4-e
       <td>Lincoln</td>
    </tr>
 </table>
-<br>
-<p>
-&nbsp&nbsp&nbsp&nbsp这是一段话  
-结束。
-</p>
 
