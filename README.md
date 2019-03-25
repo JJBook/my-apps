@@ -87,9 +87,9 @@ ___
 ###
 ### 代码框
 #### 单行代码用\`\`
-```bash
+`bash
 brew install python3
-```
+`
 #### 多行用3个\`
 ```c 可以写注释
 #include <stdio.h>
