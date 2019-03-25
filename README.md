@@ -143,7 +143,7 @@ cond(yes)->e
 cond(no)->op
 ```
   
-```flow
+```mermaid
 st=start:Start
 i=inputoutput:输入年份n
 cond1=condition:n能否被4整除？
