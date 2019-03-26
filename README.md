@@ -165,7 +165,8 @@ cond(no)->op
       <td>Lincoln</td>
    </tr>
 </table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.11.3/flowchart.js"></script>
+
+<script src="raphael-min.js"></script>
 <div id="diagram">Diagram will be placed here</div>
 <script src="flowchart.js"></script>
 <script>
@@ -227,8 +228,8 @@ cond(no)->op
                                   }
                               });
 </script>
-
-```flow
+st@>op1({"stroke":"Red"})@>cond({"stroke":"Red","stroke-width":6,"arrow-end":"classic-wide-long"})@>c2({"stroke":"Red"})@>op2({"stroke":"Red"})@>e({"stroke":"Red"})
+<!-- ```flow
 st=>start: 开始
 op=>operation: My Operation
 cond=>condition: Yes or No?
@@ -236,4 +237,4 @@ e=>end
 st->op->cond
 cond(yes)->e
 cond(no)->op
-```
+``` -->
