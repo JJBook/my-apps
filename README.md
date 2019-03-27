@@ -175,4 +175,4 @@ cond(yes)->e
 cond(no)->op
 ```
 
-<font color=gray size=5>gray</font>
+<font color=red size=5>gray</font>
