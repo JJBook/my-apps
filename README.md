@@ -174,5 +174,6 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
-
-<font color=red size=5>gray</font>
+<p>
+   <font color=red size=5>gray</font>
+</p>
