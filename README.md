@@ -174,3 +174,7 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
+
+<font color=red>1、字体图片一定要替换</font><br>
+<font color=red>2、项目标题一定要检查清楚，程序一定要检查代码</font><br>
+<font color=red>3、之前的厂商定制标题图片也一定要替换</font>
