@@ -175,9 +175,6 @@ cond(yes)->e
 cond(no)->op
 ```
 
-<font face="黑体">我是黑体字</font>
-<font face="微软雅黑">我是微软雅黑</font>
-<font face="STCAIYUN">我是华文彩云</font>
-<font color=#0099ff size=12 face="黑体">黑体</font>
-<font color=#00ffff size=3>null</font>
-<font color=gray size=5>gray</font>
+<table><tr><td bgcolor=#FF4500>这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)</td><td bgcolor=#FF0000>这里的背景色是：OrangeRed，  十六进制颜色值：#FF0000， rgb(255, 69, 0)</td></tr>
+
+<tr><td bgcolor=#00FFFF>这里的背景色是：OrangeRed，  十六进制颜色值：#00FFFF， rgb(255, 69, 0)</td></tr></table>
