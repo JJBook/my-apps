@@ -175,10 +175,4 @@ cond(yes)->e
 cond(no)->op
 ```
 
-<style type="text/css">
-   font{
-      color: red;
-      font-size: 5px;
-   }
-</style>
-<font>字体</font>
+<font style="color: red;font-size: 20px;">字体</font>
