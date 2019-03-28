@@ -175,6 +175,4 @@ cond(yes)->e
 cond(no)->op
 ```
 
-<table><tr><td bgcolor=#FF4500>这里的背景色是：OrangeRed，  十六进制颜色值：#FF4500， rgb(255, 69, 0)</td><td bgcolor=#FF0000>这里的背景色是：OrangeRed，  十六进制颜色值：#FF0000， rgb(255, 69, 0)</td></tr>
-
-<tr><td bgcolor=#00FFFF>这里的背景色是：OrangeRed，  十六进制颜色值：#00FFFF， rgb(255, 69, 0)</td></tr></table>
+<font color="red">字体</font>
