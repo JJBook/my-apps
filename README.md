@@ -174,8 +174,8 @@ st->op->cond
 cond(yes)->e
 cond(no)->op
 ```
-<summary><font size="50px">字体设置</font></summary>
-12  
-12  
-12
-<font style="color: red;font-size: 20px;">字体</font>
+
+<details>
+   <summary>HTML 5</summary>
+   This document teaches you everything you have to learn about HTML 5.
+</details>
