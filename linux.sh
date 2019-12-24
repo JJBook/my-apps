@@ -39,7 +39,122 @@
 # ls -il test*
 
 # 删除文件
-rm -i test2
+# rm -i test2
+
+# 目录处理
+# 创建文件
+# mkdir dir3
+# 删除目录
+# rmdir dir3
+# rm -ir dir3
+
+# 查看整个文件内容
+# 查看文件统计数据
+# stat linux.sh
+# 查看文件类型
+# touch testfile
+# echo "===========" >> testfile
+# file testfile
+
+# 查看整个文件
+# cat testfile
+# 显示行号
+# cat -n testfile
+
+# 显示非空行的行数
+# cat -b testfile 
+# more命令
+# more testfile
+# less 命令
+# less testfile
+# tail 命令显示最后10行
+# tail -f testfile
+# head 领命显示前10行
+# head testfile
+# ps -a
+# ps -ef > testfile
+# ps -l > testfile
+# ps l
+
+# 实时进程监控
+# top -l
+# top -i
+# top -f
+# top -R
+
+# 4.2.1挂载介质
+# mount 命令
+# unmount 命令
+
+# 使用df命令
+# df
+# du /Users/jjbook/Documents/JJ/projects
+# 数据排序
+# cat testfile
+# sort testfile
+sort -n testfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
