@@ -159,7 +159,9 @@
 # curl --connect-timeout 10 https://ip.cn
 # curl --connect-timeout 10 ip.gs
 
+# cat /etc/passwd
 
+# cat /etc/shadow
 
 
 
