@@ -92,13 +92,72 @@
 # 数据排序
 # cat testfile
 # sort testfile
-sort -n testfile
+# sort -n testfile
 
+# sort -t ':' -k 3  -n testfile
+# du -sh * | sort -nr
 
+# 搜索数据
+# grep t testfile
+# grep -v t testfile
+# touch testfile2
+# for((i=0;i<100;i++)); do
+#     echo "你好，这是命令窗口输出" >> testfile2
+# done
 
+# 压缩数据
+# bzip2 testfile2
+# bunzip2 testfile2.bz2
+# ls -l testfi*
+# bzcat testfile2.bz2
 
+# bunzip2 testfile2.bz2
+# gzip testfile2
+# gzcat testfile2.gz
+# gunzip testfile2.gz
 
+# zip -r azip a
+# zip -r t.zip t
 
+# tar -cvf test.tar test1/ test2/
+# tar -tf test.tar
+# tar -xvf test.tar
+
+# 使用Linux环境变量
+# printenv
+# set
+
+# echo $PATH
+# PATH=$PATH:/Users/jjbook/Documents/JJ/projects/my-apps
+# echo $PATH
+# myprog
+
+# open -e $HOME/.bash_profile
+# open /etc/profile
+
+# 5.7变量数组
+# mytest=(one two three four five)
+# echo $mytest
+# echo ${mytest[2]}
+# echo ${mytest[*]}
+# mytest[2]=seven
+# echo ${mytest[*]}
+# unset mytest
+# echo ${mytest[*]}
+
+# 5.8 使用命令别名
+# alias -p
+# alias li='ls -il'
+# li
+# export http_proxy="http://223.199.28.144:9999"
+# export https_proxy="http://223.199.28.144:9999"
+# export all_proxy="socks5://223.199.28.144:9999"
+# unset http_proxy
+# unset https_proxy
+# unset all_proxy
+# curl --connect-timeout 10 https://www.google.com
+# curl --connect-timeout 10 https://ip.cn
+# curl --connect-timeout 10 ip.gs
 
 
 

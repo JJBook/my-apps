@@ -13,6 +13,13 @@
       - 文件系统管理
 
 - 第2章 链接shell
-
-- 第3张 基本的bashshell命令
+- 第3章 基本的bashshell命令
+- 第4章 更多bashshell命令
+- 第5章 使用Linux环境变量
+   - 5.6 定位系统环境变量
+      - 登录sehell
+      - 交互式shell
+      - 非交互式shell
+- 第6章 理解Linux文件权限
+- 第7章 使用编辑器
 
