@@ -155,13 +155,16 @@
 # unset http_proxy
 # unset https_proxy
 # unset all_proxy
-# curl --connect-timeout 10 https://www.google.com
+# curl --connect-timeout 10 www.google.com
 # curl --connect-timeout 10 https://ip.cn
 # curl --connect-timeout 10 ip.gs
 
 # cat /etc/passwd
-
 # cat /etc/shadow
+
+# file linux.sh
+
+
 
 
 
