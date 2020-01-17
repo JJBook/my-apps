@@ -163,6 +163,68 @@
 # cat /etc/shadow
 
 # file linux.sh
+# touch newfile3
+# ls -al newfile3
+# if [ -f "newfile3" ]; then
+#     rm newfile3
+# fi
+
+# umask 026
+# touch newfile3
+# ls -ls newfile3
+
+# 将读取权限添加到任何人
+# chmod o+r newfile3
+
+# 删除用户已拥有的执行权限
+# chmod u-x newfile3
+
+# 修改所有者
+# chown dan newfile3
+# ls -l newfile3
+
+# vim newfile3
+# emacs newfile3
+# date ; who
+
+# date
+# who
+# set
+
+# testing=`date`
+# echo $testing
+# today=`date +%y%m%d`
+# echo $today
+
+# 8.5重定向输入输出
+date > newfile3
+who >> newfile3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
