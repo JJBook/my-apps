@@ -1,0 +1,26 @@
+#!/bin/bash
+# var1=10
+# var2=30
+# var3=$[ $var1 + $var2 ]
+# echo The answer is $var3
+# exit 5
+
+if [ -e $HOME ]
+then
+    echo "The object exists, is is a file?"
+    if [ -f $HOME ] 
+    then
+        echo "Yes, it's not a file"
+    else
+        echo "No, it's not a file!"
+        if [ -f $HOME/.bash_history ]
+        then
+            echo "But this is a file"
+        fi
+    fi
+else
+    echo "Sorry, the object doesn't exits"
+fi
+
+
+

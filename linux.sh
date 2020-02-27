@@ -149,9 +149,9 @@
 # alias -p
 # alias li='ls -il'
 # li
-# export http_proxy="http://223.199.28.144:9999"
-# export https_proxy="http://223.199.28.144:9999"
-# export all_proxy="socks5://223.199.28.144:9999"
+# export http_proxy="http://localhost:8118"
+# export https_proxy="http://localhost:8118"
+# export all_proxy="socks5://localhost:8118"
 # unset http_proxy
 # unset https_proxy
 # unset all_proxy
@@ -195,14 +195,198 @@
 # echo $testing
 # today=`date +%y%m%d`
 # echo $today
-
 # 8.5重定向输入输出
-date > newfile3
-who >> newfile3
+# date > newfile3
+# who >> newfile3
+# wc << marker
+# data
+# marker
 
+# wc << EOF
+# > test string 1
+# > test string 2
+# > test string 3
+# >EOF
 
+# rpm -qa > rpm.plist
 
+# 8.7数学计算
+# expr 1 + 5
+# expr 5 \* 2
+# var1=10
+# var2=20
+# var3=`expr $var2 / $var1`
+# echo "The result is $var3"
+# var1=$[1 + 5]
+# echo $var1
+# var2=$[$var1 * 2]
+# echo $var2
 
+# var1=100
+# var2=50
+# var3=45
+# var4=$[$var1 * ($var2 - $var3)]
+# echo "The final result is $var4"
+
+# var1=100
+# var2=45
+# var3=$[$var1 / $var2]
+# echo The final resule is $var3
+
+# bc
+# 12 * 5.4
+# 64.8
+# 3.156 * (3 + 5)
+# 25.248
+
+# bc -q
+
+# 在脚本中使用bc
+# var1=`echo " scale=4; 3.44 / 5" | bc`
+# echo The answer is $var1
+# osascript -e 'display notification "结束任务" with title "任务完成"'
+
+# var1=100
+# var2=45
+# var3=`echo "scale=4; $var1 / $var2" | bc`
+# echo The answer for this is $var3
+
+# var1=20
+# var2=3.14159
+# var3=`echo "scale=4; $var1 * $var2" | bc`
+# var4=`echo "scale=4; $var3 * $var2" | bc`
+# echo The final result is $var4
+
+# var1=10.46
+# var2=43.67
+# var3=33.2
+# var4=71
+# var5=`bc << EOF
+# scale = 4
+# a1 = ($var1 * $var2)
+# b1 = ($var3 * $var4)
+# a1+b1
+# EOF
+# `
+# echo The final answer for this mess is $var5
+
+# date
+# echo $?
+
+# asdfg
+# echo $?
+
+# date %t
+# echo $?
+
+# chmod u+x test13
+# ./test13
+# echo $?
+
+# chmod u+x test14
+# ./test14
+# echo $?
+
+# if date
+# then
+#     echo "it worked"
+# fi
+
+# if asdfg 
+# then
+#     echo "it didn't work"
+# fi
+# echo "we're outside of the if statement"
+
+# testuser=jjbook
+# if grep $testuser newfile3
+# then
+#     echo The bash files for user $testuser are:
+#     ls -a /Users/$testuser
+# fi
+
+# testuser=abc
+# if grep $testuser newfile3 
+# then
+#     echo The files for user $testuser are:
+#     ls -a /Users/$testuser/
+# else
+#     echo "The user name $testuser doesn't exist on this system"
+# fi
+
+# test 命令
+# val1=10
+# val2=11
+# if [ $val1 -gt 5 ]
+# then
+#     echo "The test value $val1 is greater then 5."
+# fi
+
+# if [ $val1 -eq $val2 ]
+# then
+#     echo "The values are equal"
+# else
+#     echo "The values are different"
+# fi
+
+# val1=`echo "scale=4; 10 / 3" | bc`
+# echo "The test value is $val1"
+# if [ $val1 -gt 3 ]
+# then
+#     echo "The result is larger than 3"
+# fi
+
+# testuser=jjbook
+# if [ $USER = $testuser ]
+# then
+#     echo "Welcome $testuser"
+# fi
+
+# val1=baseball
+# val2=hockey
+# if [ $val1 \> $val2 ]
+# then
+#     echo "$val1 is greater than $val2"
+# else
+#     echo "$val1 is less than $val2"
+# fi
+
+# chmod u+x test10
+# ./test10
+
+# 9.4.3文件比较
+# chmod u+x test11
+# ./test11
+
+# chmod u+x test12
+# ./test12
+
+# ./test13
+# ./test14
+
+# chmod u+x test15
+# ./test15
+
+# chmod u+x test16
+# ./test16
+
+# chmod u+x test17
+# ./test17
+
+# chmod u+x test18
+# ./test18
+
+# chmod u+x test19
+# ./test19
+
+# chmod u+x test20
+# ./test20
+
+# chmod +x test21
+# ./test21
+
+# chmod +x test22
+# ./test22
 
 
 

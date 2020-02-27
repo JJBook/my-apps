@@ -1,0 +1,15 @@
+#!/bin/zsh
+
+if [ ./badfile1 -nt ./badfile2 ]
+then
+    echo "The badfile1 file is newer than badfile2"
+else
+    echo "The badfile2 file is newer than badfile1"
+fi
+
+# 文件不存在，-nt比较只是返回一个失败条件。要在-nt和-ot比较中使用
+# 文件，必须确认该文件存在。
+
+
+
+

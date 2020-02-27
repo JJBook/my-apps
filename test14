@@ -1,0 +1,33 @@
+#!/bin/bash
+# var1=10
+# var2=30
+# var3=$[ $var1 + $var2 ]
+# exit $var3
+
+# var1=10
+# var2=30
+# var3=$[ $var1 * var2 ]
+# echo The value is $var3
+# exit $var3
+
+pwfile=/etc/hosts
+
+if [ -f $pwfile ]
+then
+    if [ -r $pwfile ]
+    then
+        tail $pwfile
+    else
+        echo "Sorry, I'm unable to read the $pwfile file"
+    fi
+else
+    echo "Sorry, the file $pwfile doesn't exist"
+fi
+
+
+
+
+
+
+
+

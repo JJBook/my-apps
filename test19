@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+if [ -G /etc/hosts ]
+then
+    echo "You're in the same group as the file"
+else
+    echo "The file is not ownerd by your group"
+fi
+
+ls -l /etc/hosts

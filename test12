@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -e $HOME ]
+then
+    echo "ok on the directory, now let's check the file."
+    if [ -e $HOME/testing ]
+    then
+        echo "Appending date to existing file"
+    else
+        echo "Create new file"
+        date > $HOME/testing
+    fi
+else
+    echo "Sorry, you don't havae a HOME directory"
+fi
