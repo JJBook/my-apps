@@ -1,0 +1,13 @@
+#!/bin/bash
+
+val1=10
+if (( $val1 **2 > 90 ))
+then
+    (( val2 = val1 ** 2 ))
+    echo "The square of $val1 is $val2"
+fi
+
+: << !
+双圆括号标示数学表达式
+双圆括号命令允许在比较中包含搞基数学公式。
+!

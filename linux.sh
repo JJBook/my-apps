@@ -388,7 +388,26 @@
 # chmod +x test22
 # ./test22
 
+# chmod u+x test23
+# ./test23
 
+# bc
+
+# chmod u+x test24
+# ./test24
+
+# vscode test25
+# vscode
+# if [ "${BASH-no}" != "no" ]; then
+#     cd ~
+#     [ -r ~/.zshrc ] && . ~/.zshrc
+# fi
+
+# chmod u+x test25
+# ./test25
+
+# chmod u+x test26
+# ./test26
 
 
 
