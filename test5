@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# for state in `cat newfile3`; do
+#     echo "$state"
+# done
+
+# file="newfile3"
+# IFS=$'\n'
+# for item in `cat $file`; do
+#     echo "$item"
+# done
+
+# IP=220.112.253.111
+# IFS=$'.'
+# TEMIP=$(echo $IP)
+# # echo $TEMIP
+# IFS=" "
+# echo $TEMIP
+# for x in $TEMIP; do
+#     Xip="${x}.$Xip"
+# done
+# echo ${Xip}
+# echo ${Xip%.}
+
+# IFS=:
+# var=ab::cd
+# echo $var
+# a=`echo $var`
+# echo $a
+# IFS=$' '
+# b=`echo $a`
+# echo $b
+# echo "$var"
+
+
+
+
+
+

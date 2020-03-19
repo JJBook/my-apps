@@ -5,22 +5,32 @@
 # echo The answer is $var3
 # exit 5
 
-if [ -e $HOME ]
-then
-    echo "The object exists, is is a file?"
-    if [ -f $HOME ] 
-    then
-        echo "Yes, it's not a file"
-    else
-        echo "No, it's not a file!"
-        if [ -f $HOME/.bash_history ]
-        then
-            echo "But this is a file"
-        fi
-    fi
-else
-    echo "Sorry, the object doesn't exits"
-fi
+# if [ -e $HOME ]
+# then
+#     echo "The object exists, is is a file?"
+#     if [ -f $HOME ] 
+#     then
+#         echo "Yes, it's not a file"
+#     else
+#         echo "No, it's not a file!"
+#         if [ -f $HOME/.bash_history ]
+#         then
+#             echo "But this is a file"
+#         fi
+#     fi
+# else
+#     echo "Sorry, the object doesn't exits"
+# fi
+
+# var1=100
+# until [ $var1 -eq 0 ]
+# do
+#     echo $var1
+#     var1=$[ $var1 - 25 ]
+# done
+
+
+
 
 
 

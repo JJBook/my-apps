@@ -1,0 +1,16 @@
+#!/bin/zsh
+
+for file in /Users/jjbook/Documents/JJ/projects/my-apps/*.sh  /Users/jjbook/Documents/JJ/projects
+do
+    if [ -d "$file" ]
+    then
+        echo "$file is a directory"
+    elif [ -f "$file" ] 
+    then
+        echo "$file is a file"
+    else
+        echo "$file doesnt exist"
+    fi
+done
+
+

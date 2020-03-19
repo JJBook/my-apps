@@ -1,0 +1,13 @@
+#!/bin/bash
+
+list="alibaba tencen"
+list=$list" baidu"
+
+for name in $list; do
+    echo $name
+done
+
+
+
+
+

@@ -1,0 +1,76 @@
+#!/bin/bash
+
+# for name in "尚书" "论语" "中庸" "四书"
+# do
+#     echo $name
+# done
+
+# for name in "尚书" "论语" "中庸" "四书"
+# do
+#     echo "$name"
+# done
+
+# echo "$name"
+# name="诗经"
+# echo "$name"
+
+# for word in I don't know if this'll work
+# do
+#     echo "$word"
+# done
+
+# for word in I don\'t know if "this'll" work
+# do
+#     echo "$word"
+# done
+
+# for word in china "new zealand"
+# do
+#     echo "$word"
+# done 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

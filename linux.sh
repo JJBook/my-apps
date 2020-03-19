@@ -409,6 +409,35 @@
 # chmod u+x test26
 # ./test26
 
+# chmod u+x test1
+# ./test1
+
+# cat $1 | grep -E '<mov name' | awk -F '"' '{print $2}'
+
+# chmod u+x test4
+# ./test4
+
+# chmod u+x test5
+# ./test5
+
+# chmod u+x test6
+# ./test6
+
+# chmod u+x test7
+# ./test7
+
+# chmod u+x test8
+# ./test8
+
+# chmod u+x test9
+# ./test9
+
+# ./test10
+# ./test11
+./test13
+
+
+
 
 
 
