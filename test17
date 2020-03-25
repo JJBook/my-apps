@@ -1,10 +1,26 @@
 #!/bin/zsh
 
-if [ -x test16 ]
-then
-    echo "You can run the script:"
-    ./test16
-else
-    echo "Sorry, you are unable to execute the script"
-fi
+# if [ -x test16 ]
+# then
+#     echo "You can run the script:"
+#     ./test16
+# else
+#     echo "Sorry, you are unable to execute the script"
+# fi
+
+
+for var1 in 1 2 3 4 5 6 7 8 9 10
+do
+    if [ $var1 -eq 5 ]; then
+        break
+    fi
+    echo "Iteration number: $var1"
+done
+echo "The for loop is completed"
+
+
+
+
+
+
 

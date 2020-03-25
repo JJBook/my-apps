@@ -1,27 +1,63 @@
 #!/bin/zsh
 
-logfile=t16test
+# logfile=t16test
 
-touch $logfile
-chmod u-w $logfile
-now=`date +%Y%m%d-%H%M`
+# touch $logfile
+# chmod u-w $logfile
+# now=`date +%Y%m%d-%H%M`
 
-if [ -w $logfile ]
-then
-    echo "The program ran at: $now" > $logfile
-    echo "The first attempt succeeded"
-else
-    echo "The first attempt failed"
-fi
+# if [ -w $logfile ]
+# then
+#     echo "The program ran at: $now" > $logfile
+#     echo "The first attempt succeeded"
+# else
+#     echo "The first attempt failed"
+# fi
 
-chmod u+w $logfile
+# chmod u+w $logfile
 
-if [ -w $logfile ]
-then
-    echo "The program ran at: $now" > $logfile
-    echo "The second attempt succeeded"
-else
-    echo "The second attempt failed"
-fi
+# if [ -w $logfile ]
+# then
+#     echo "The program ran at: $now" > $logfile
+#     echo "The second attempt succeeded"
+# else
+#     echo "The second attempt failed"
+# fi
 
-cat $logfile
+# cat $logfile
+
+# var1=3
+# until [ $var1 -eq 0 ]
+# do 
+#     echo "Outer loop: $var1"
+#     var2=1
+#     while [ $var2 -lt 5 ]
+#     do
+#         var3=`echo "scale=4; $var1 / $var2" | bc`
+#         echo "Inner loop: $var1 / $var2 = $var3"
+#         var2=$[ $var2 + 1 ]
+#     done
+#     var1=$[ $var1 - 1 ]
+# done
+# echo $IFS
+# IFS_OLD=$IFS
+# IFS=$'\n'
+# for entery in `cat newfile3`
+# do 
+#     echo "Value in $entery -"
+#     IFS=:;
+#     for value in $entery
+#     do
+#         echo "$value"
+#     done
+# done
+# IFS=$IFS_OLD
+
+
+#数组
+# list=(en:英语 fr:法语)
+# for item in $list; do
+#     echo $item
+#     key=`echo "$item" | awk -F ":" '{print $2}'`
+#     echo $key
+# done

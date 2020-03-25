@@ -149,9 +149,9 @@
 # alias -p
 # alias li='ls -il'
 # li
-# export http_proxy="http://localhost:8118"
-# export https_proxy="http://localhost:8118"
-# export all_proxy="socks5://localhost:8118"
+# export http_proxy="http://188.187.0.158:8080"
+# export https_proxy="http://188.187.0.158:8080"
+# export all_proxy="socks5://118.99.102.124:8080"
 # unset http_proxy
 # unset https_proxy
 # unset all_proxy
@@ -434,9 +434,12 @@
 
 # ./test10
 # ./test11
-./test13
-
-
+# ./test13
+# ./test14
+# ./test15
+# chmod u+x test16
+# ./test16
+# ./test17
 
 
 
