@@ -9,14 +9,46 @@
 # fi
 
 
-for var1 in 1 2 3 4 5 6 7 8 9 10
+# for var1 in 1 2 3 4 5 6 7 8 9 10
+# do
+#     if [ $var1 -eq 5 ]; then
+#         break
+#     fi
+#     echo "Iteration number: $var1"
+# done
+# echo "The for loop is completed"
+
+# echo 初始 OPTIND: $OPTIND
+
+while 
+    getopts 'b:c:d:a' opt 
 do
-    if [ $var1 -eq 5 ]; then
-        break
-    fi
-    echo "Iteration number: $var1"
+    echo "xxx"
+    case $opt in
+        a)
+            echo "case $OPTARG"
+        ;;
+        b)
+            echo "case $OPTARG"
+        ;;
+        c)
+            echo "case $OPTARG"
+        ;;
+        d)
+            echo "case $OPTARG"
+        ;;
+        *)
+            echo "default $OPTARG"
+        ;;
+    esac
 done
-echo "The for loop is completed"
+
+echo $?
+
+
+
+
+
 
 
 

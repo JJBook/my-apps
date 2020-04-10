@@ -149,9 +149,9 @@
 # alias -p
 # alias li='ls -il'
 # li
-# export http_proxy="http://188.187.0.158:8080"
-# export https_proxy="http://188.187.0.158:8080"
-# export all_proxy="socks5://118.99.102.124:8080"
+# export http_proxy="https://goproxy.baidu.com"
+# export https_proxy="https://goproxy.baidu.com"
+# export all_proxy="https://goproxy.baidu.com"
 # unset http_proxy
 # unset https_proxy
 # unset all_proxy
@@ -412,8 +412,9 @@
 # chmod u+x test1
 # ./test1
 
-# cat $1 | grep -E '<mov name' | awk -F '"' '{print $2}'
-
+str=$(cat $1)
+echo $str| grep -E '<mov name'
+# echo $str2
 # chmod u+x test4
 # ./test4
 
@@ -439,10 +440,12 @@
 # ./test15
 # chmod u+x test16
 # ./test16
-# ./test17
+# ./test17 -c 123 -a 11111
 
 
-
+# str=$(cat $1)
+# str2=`echo $str | grep "function"`
+# echo $str2
 
 
 
