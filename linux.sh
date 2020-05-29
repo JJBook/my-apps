@@ -149,14 +149,13 @@
 # alias -p
 # alias li='ls -il'
 # li
-# export http_proxy="https://goproxy.baidu.com"
-# export https_proxy="https://goproxy.baidu.com"
-# export all_proxy="https://goproxy.baidu.com"
+# export http_proxy="http://52.179.231.206:80"
+# export https_proxy="https://52.179.231.206:80"
+# export all_proxy="https://60.217.247.90:80"
 # unset http_proxy
 # unset https_proxy
 # unset all_proxy
-# curl --connect-timeout 10 www.google.com
-# curl --connect-timeout 10 https://ip.cn
+curl --connect-timeout 10 www.google.com 
 # curl --connect-timeout 10 ip.gs
 
 # cat /etc/passwd
@@ -412,8 +411,8 @@
 # chmod u+x test1
 # ./test1
 
-str=$(cat $1)
-echo $str| grep -E '<mov name'
+# str=$(cat $1)
+# echo $str| grep -E '<mov name'
 # echo $str2
 # chmod u+x test4
 # ./test4
@@ -447,7 +446,45 @@ echo $str| grep -E '<mov name'
 # str2=`echo $str | grep "function"`
 # echo $str2
 
+# 新增
+# sed -e '4a\
+# newLine' testfile
 
+# 删除行
+# sed '4d' testfile
+
+# 插入
+# sed '2i\
+# drink tea' testfile
+
+# 插入2行
+# sed '2a\
+# Drink tea or ......\
+# drink beer?\
+# ' testfile
+
+# 替换行
+# sed '2c\
+# No 2-5 number\
+# ' testfile
+
+# 以行为单位显示
+# sed -n '1,2p' testfile
+
+# 数据的搜寻并显示
+# sed -n '/test/p' testfile
+
+# 数据的搜寻并删除
+# sed '/test/d' testfile
+
+# 数据的搜寻并执行命令
+# nl testfile | sed -n '/test/p' | sed 's/is/are/g'
+# sed -n '/root/{s/bash/blueshell/;p;q}' testfile
+
+# 数据的搜寻并替换
+# ip=`cat testfile | grep 'inet addr' | sed 's/^.*addr://g' | sed 's/Bcast.*$//g'`
+# echo $ip
+# sed -e 's/\.$/\!/g' testfile
 
 
 

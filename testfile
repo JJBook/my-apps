@@ -1,14 +1,16 @@
-1
-2
-100
-45
-3
-10
-145
-75
+HELLO LINUX!  
+Linux is a free unix-type opterating system.
+This is a linux testfile!
+Linux test
 
-one
-two
-three
-four
-five
+eth0 Link encap:Ethernet HWaddr 00:90:CC:A6:34:84
+inet addr:192.168.1.100 Bcast:192.168.1.255 Mask:255.255.255.0
+inet6 addr: fe80::290:ccff:fea6:3484/64 Scope:Link
+UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1
+
+runoob.
+google.
+taobao.
+facebook.
+zhihu-
+weibo-
