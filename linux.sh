@@ -155,7 +155,7 @@
 # unset http_proxy
 # unset https_proxy
 # unset all_proxy
-curl --connect-timeout 10 www.google.com 
+# curl --connect-timeout 10 www.google.com 
 # curl --connect-timeout 10 ip.gs
 
 # cat /etc/passwd
