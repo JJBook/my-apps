@@ -441,7 +441,6 @@
 # ./test16
 # ./test17 -c 123 -a 11111
 
-
 # str=$(cat $1)
 # str2=`echo $str | grep "function"`
 # echo $str2
@@ -486,9 +485,283 @@
 # echo $ip
 # sed -e 's/\.$/\!/g' testfile
 
+# sed -i "" 's/-//g' testfile
+
+# chapter10
+
+# ./test1
+
+# 处理用户输入
+# factorial=1
+# for (( i = 1; i <= $1; i++ )); do
+# 	factorial=$[ $factorial * $i ]
+# done
+
+# echo The factorial of $1 is $factorial
+
+# total=$[ $1 * $2 ]
+# echo The fiest paremerer is $1
+# echo The second parameter is $2
+# echo The total value is $total
+
+# count=1
+# while [[ -n "$1" ]]; do
+# 	echo "parameter #$count = $1"
+# 	count=$[ $count + 1 ]
+# 	shift
+# done
+
+# echo "The original parameter: $*"
+# shift 3
+# echo "Here's the new first parameter: $1"
+
+# while [[ -n "$1" ]]; do
+# 	case "$1" in
+# 		-a) echo "Found the -a option" ;;
+# 		-b) echo "Found the -b option" ;;
+# 		-c) echo "Found the -c option" ;;
+# 		*) echo "$1 is not an option" ;;
+# 	esac
+# 	shift
+# done
+
+# while [[ -n "$1" ]]; do
+# 	case "$1" in
+# 		-a) echo "Found the -a option" ;;
+# 		-b) echo "Found the -b option" ;;
+# 		-c) echo "Found the -c option" ;;
+# 		--) shift
+# 			break;;
+# 		*) echo "$1 is not an option";;
+# 	esac
+# 	shift
+# done
+
+# count=1
+# for param in "$@"
+# do
+# 	echo "parameter #$count: $param"
+# 	count=$[ $count + 1 ]
+# done
+
+# while [[ -n "$1" ]]; do
+# 	case "$1" in
+# 		-a) echo "Found the -a option" ;;
+# 		-b) param=$2
+# 			echo "Found the -b option, with parameter value $param"
+# 			shift 2 ;;
+# 		-c) echo "Found the -c option" ;;
+# 		--) shift
+# 			break ;;
+# 		*) echo "$1 is not an option" ;;
+# 	esac
+# 	shift
+# done
+
+# count=1
+# for param in $@; do
+# 	echo "parameter #$count: $param"
+# 	count=$[ $count + 1 ]
+# done
 
 
+# txt=(`sed -n "/^function M:isWelcomeScene()/,/^end/p" /Users/jjbook/Documents/JJ/babybus/git/com.sinyee.babybus.food/src/app/gameplay/scene/GameplayScene.lua`)
+# echo ${txt[3]}
 
+# ./test1 -a -b test1 -d test1 test2 test3
+# echo -n "Enter your name:"
+# read name
+# echo "Hello $name, welcome to my program."
+
+# read -p "Please enter your age:" age
+
+# read -p "Enter a number:"
+# factorial=1
+# for (( i = 1; i <= $REPLY; i++ )); do
+# 	factorial=$[ $factorial * $i ]
+# done
+# echo "The factorial of $REPLY is $factorial"
+
+# if read -t 5 -p "Please enter your name: " name
+# then
+# 	echo "Hello $name, welcome to my script"
+# else
+# 	echo 
+# 	echo "Sorry, to slow!"
+# fi
+
+# read -n1 -p "Do you want to continue [Y/N]?" answer
+# case $answer in
+# Y | y) echo
+# 		echo "fine, continue ..." ;;
+# N | n) echo
+# 		echo OK, goodbye
+# 		exit;;
+# esac
+# echo "This is the end of the script"
+
+
+# days=$[ $age * 365 ]
+# echo "That makes you over $days days old!"
+
+# read -s -p "Enter your passwd: " pass
+# echo
+# echo "Is your password really $pass?"
+
+# cat testfile
+
+# count=1
+# cat testfile | while read line
+# do
+# 	echo "Line $count: $line"
+# 	count=$[ $count + 1 ]
+# done
+# echo "Finished processing the file"
+
+# cat
+# cat < testfile
+
+# ls -l > testfile5
+# cat testfile5
+
+# who >> testfile5
+# cat testfile5
+
+# ls -al testfile5 > testfile6
+# cat testfile6
+
+# ls -al testfile100 2> testfile100
+# cat testfile100
+
+# ls -al test test1 test2 2> testfile6 
+# ls -al test100 test111 test112 test1 &> testfile6
+
+# echo "This is an error " >&2
+# echo "this is normal output"
+
+# exec 1>testfile6
+
+# echo "This is a test of redirecting all output"
+# echo "from a script to another file."
+# echo "without having to redirect evety individual line"
+
+# exec 2>testfile6
+
+# echo "This is the start of the script"
+# echo "now redirecting all output to another location"
+
+# exec 1>testfile7
+# echo "The output should go to the testout file"
+# echo "but this should go to the testerror file" >&2
+
+# exec 0< testfile
+# count=1
+# while read line
+# do
+# 	echo "Line #$count: $line"
+# 	count=$[ $count + 1 ]
+# done
+
+# exec 3> testfile7
+
+# echo "This should display on the monitor"
+# echo "and this should be stored in the file" >&3
+# echo "Then this should be back on the monitor"
+
+# exec 3>&1
+# exec 1>testfile7
+
+# echo "This should store in the output file"
+# echo "along with this line."
+
+# exec 1>&3
+
+# echo "Now things should be back to normal"
+
+# exec 6<&0
+
+# exec 0<testfile
+
+# count=1
+# while read line
+# do
+# 	echo "Line #$count: $line"
+# 	count=$[ $count + 1 ]
+# done 
+# exec 0<&6
+
+# read -p "Are you done now?" answer
+# case $answer in
+# 	Y|y) echo "Goodbye";;
+# 	N|n) echo "Sorry, this is the end.";;
+# esac
+
+# exec 3<> testfile
+# read line <&3
+# echo "Read: $line"
+# echo "This is a test line " >&3
+
+# exec 3> testfile7
+# echo "This is a test line of data" >&3
+# exec 3>&-
+# echo "This won't work" >&3
+
+# exec 3> testfile7
+# echo "This is a test line of data" >&3
+# exec 3>&-
+
+# cat testfile7
+# echo "This'll be bad" >&3
+
+# /usr/sbin/lsof -a -p $$ -d 0,1,2
+
+# exec 3> testfile8
+# exec 6> testfile9
+# exec 7< testfile
+
+# /usr/sbin/lsof -a -p $$ -d 0,1,2,3,6,7
+
+# 禁止命令输出
+# ls -al > /dev/null
+# cat /dev/null
+
+# mktemp testing.XXXXXX
+
+# tempfile=`mktemp test19.XXXXXX`
+# exec 3>$tempfile
+
+# echo "This script writes to temp file $tempfile"
+
+# echo "This is the first line" >&3
+# echo "This is the second line." >&3
+# echo "This is the last line." >&3
+# exec 3>&-
+
+# echo "Done creating temp file. The contents are:"
+# cat $tempfile
+# rm -r $tempfile 2> /dev/null
+
+# tempfile=`mktemp -t tmp.XXXXXX`
+# echo "This is a test file." > $tempfile
+# echo "This is the second line of the test." >> $tempfile
+
+# echo "The temp is located at: $tempfile"
+# cat $tempfile
+# rm -f $tempfile
+
+# date | tee testfile2
+# cat testfile2
+
+# who | tee testfile2
+# cat testfile2
+
+# date | tee -a testfile2
+# cat testfile2
+
+# tempfile=test22file
+# echo "This is the start of the test" | tee $tempfile
+# echo "This is the second line of the test" | tee -a $tempfile
+# echo "This is the end of the test" | tee -a $tempfile
 
 
 

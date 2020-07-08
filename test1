@@ -29,10 +29,137 @@
 #     echo "$word"
 # done 
 
+# list="尚书 论语 中庸 四书"
+# list=$list" 五经"
 
+# for state in $list
+# do
+# 	echo "读 $state?"
+# done
 
+# file="testfile"
 
+# for state in `cat $file`; do
+# 	echo $state
+# done
 
+# file="testfile"
+
+# IFS=$'\n'
+
+# for state in `cat ${file}`
+# do
+# 	echo "${state}"
+# done
+
+# for file in ./*
+# do
+# 	if [[ -d "$file" ]]; then
+# 		echo "directory"
+# 	elif [ -f "${file}" ]; then
+# 		echo "file"
+# 	fi
+# done
+
+# for (( i = 0; i < 10; i++ )); do
+# 	echo "$i"
+# done
+
+# for (( a=1, b=10; a <= 10; a++, b-- )); do
+# 	echo "$a - $b"
+# done
+
+# for (( i = 0; i < 10; i++ )); do
+# 	if [[ $i -eq 5 ]]; then
+# 		break
+# 	fi
+# 	echo "$i"
+# done
+
+# for (( i = 0; i < 10; i++ )); do
+# 	echo "Outer loop: $i"
+# 	for (( a = 0; a < 10; a++ )); do
+# 		if [[ a -eq 5 ]]; then
+# 			break
+# 		fi
+# 		echo "Inner loop: $a"
+# 	done
+# done
+
+# for (( i = 0; i < 10; i++ )); do
+# 	echo "Outer loop: $i"
+# 	for (( a = 0; a < 10; a++ )); do
+# 		if [[ a -eq 5 ]]; then
+# 			break 2
+# 		fi
+# 		echo "Inner loop: $a"
+# 	done
+# done
+
+# for (( i = 0; i < 15; i++ )); do
+# 	if [[ $i -gt 5 ]] && [[ $i -lt 10 ]]; then
+# 		continue
+# 	fi
+# 	echo "num: $i"
+# done
+
+# var=0
+# while echo "while  iteration: $var"
+# 	[ $var -lt 15 ]
+# do
+# 	if [[ $var -gt 5 ]] && [[ $var -lt 10 ]]; then
+# 		continue
+# 	fi
+# 	echo "Inside iteration: $var"
+# 	var=$[ $var + 1 ]
+# done
+
+# for file in ./*; do
+# 	if [[ -f "${file}" ]]; then
+# 		echo "is file"
+# 	fi
+# done > output.txt
+
+# set -- `getopt -q ab:c "$@"`
+# while [[ -n "$1" ]]
+# do
+# 	case "$1" in
+# 	-a) echo "Found the -a option" ;;
+# 	-b) param="$2"
+# 		echo "Found the -b option, with parameter value $param"
+# 		shift ;;
+# 	-c) echo "Found the -c option" ;;
+# 	--) shift
+# 		break ;;
+# 	*) echo "$1 is not an option" ;;
+# 	esac
+# 	shift
+# done
+
+# count=1
+# for param in "$@"
+# do
+# 	echo "parameter #$count: $param"
+# 	count=$[ $count + 1 ]
+# done
+
+# while getopts :ab:c opt
+# do
+# 	case $opt in
+# 		a) echo "Found the -a option";;
+# 		b) echo "Found the -b option, with value $OPTARG";;
+# 		c) echo "Found the -c option";;
+# 		d) echo "Found the -d option";;
+# 		*) echo "Unknow option: $opt";;
+# 	esac
+# done
+# shift $[ $OPTIND - 1 ]
+
+# count=1
+# for param in "$@"; do
+# 	echo "Parameter $count: $param"
+# 	count=$[ $count + 1 ]
+# done
 
 
 
