@@ -763,12 +763,59 @@
 # echo "This is the second line of the test" | tee -a $tempfile
 # echo "This is the end of the test" | tee -a $tempfile
 
+# ps au
 
+# trap "echo Haha" SIGINT SIGTERM
+# echo "This is a test program"
+# count=1
+# while [[ $count -le 10 ]]; do
+# 	echo "Loop #$count"
+# 	sleep 10
+# 	count=$[ $count + 1 ]
+# done
+# echo "This is the end of the test program"
 
+# trap "echo byebye" EXIT
+# count=1
+# while [[ $count -le 5 ]]; do
+# 	echo "Loop #$count"
+# 	sleep 3
+# 	count=$[ $count + 1 ]
+# done
 
+# trap "echo byebye" EXIT
+# count=1
+# while [[ $count -le 5 ]]; do
+# 	echo  "Loop #$count"
+# 	sleep 3
+# 	count=$[ $count + 1 ]
+# done
+# trap - EXIT
+# echo "I just removed the trap"
 
+# ./test1 &
+# ./test1 &
 
+# nohup ./test1 &
 
+# echo "This is a test program $$"
+# count=1
+
+# while [[ $count -le 10000 ]]; do
+# 	echo "Loop #$count"
+# 	sleep 10
+# 	count=$[ $count + 1 ]
+# done
+
+# echo "This is the end of the test program"
+
+# nice -n -10 ./test1 > testfile3 &
+
+# ./test1 > testfile3 &
+
+# time=`date +%T`
+# echo "This script ran at $time"
+# echo "This is end of the script"
 
 
 

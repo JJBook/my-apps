@@ -35,6 +35,8 @@
 # for state in $list
 # do
 # 	echo "读 $state?"
+# 	sleep 21
+# 	echo "读 $state?" 
 # done
 
 # file="testfile"
@@ -80,7 +82,7 @@
 # 	echo "Outer loop: $i"
 # 	for (( a = 0; a < 10; a++ )); do
 # 		if [[ a -eq 5 ]]; then
-# 			break
+# 			break 2
 # 		fi
 # 		echo "Inner loop: $a"
 # 	done
@@ -161,7 +163,7 @@
 # 	count=$[ $count + 1 ]
 # done
 
-
+echo "别郁闷，下个才是最适合的。"
 
 
 
