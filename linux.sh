@@ -817,12 +817,114 @@
 # echo "This script ran at $time"
 # echo "This is end of the script"
 
+# function func1 {
+# 	echo "This is an example of a function"
+# }
 
+# count=1
+# while [[ $count -le 5 ]]; do
+# 	func1
+# 	count=$[ $count + 1 ]
+# done
+# echo "This is the end of the loop"
+# func1
+# echo "Now this is the end of the script"
 
+# func2
+# echo "Now this is the end of the script"
 
+# function func2 {
+# 	echo "This is an example of a function"
+# }
 
+# func1
 
+# function func1 {
+# 	echo "This is a repeat of the same function"
+# }
 
+# func1
+# echo "This is end of the script"
+
+# func1() {
+# 	echo "trying to display a non-existent file"
+# 	ls -l badfile
+# }
+
+# echo "testing the function:"
+# func1
+# echo "The exit status is:$?"
+
+# func1() {
+# 	ls -l badfile
+# 	echo "This was a test of a bad command"
+# }
+
+# echo "testing the function: "
+# func1
+# echo "this exit status is: $?"
+
+# function db1 {
+# 	read -p "Enter a value: " value
+# 	echo "double the value"
+# 	return $[ $value * 2 ]
+# }
+
+# db1
+# echo "The new value is $?"
+
+# function db1 {
+# 	read -p "Enter a value:" value
+# 	echo $[ $value * 2 ]
+# }
+
+# result=`db1`
+# echo "The new value is $result"
+
+# function addem(){
+# 	if [[ $# -eq 0 ]] || [ $# -gt 2 ]; then
+# 		echo -1
+# 	elif [[ $# -eq 1 ]]; then
+# 		echo $[ $1 + $1 ]
+# 	else
+# 		echo $[ $1 + $2 ]
+# 	fi
+# }
+
+# echo -n "Add 10 and 15: "
+# value=`addem 10 15`
+# echo $value
+# echo -n "Let's try adding just on number: "
+# value=`addem 10`
+# echo $value
+# echo -n "Now trying adding no numbers: "
+# value=`addem`
+# echo $value
+# echo -n "Finally, try adding three numbers: "
+# value=`addem 10 15 20`
+# echo $value
+
+# function badfunc1 {
+# 	echo $[ $1 + $2 ]
+# }
+
+# if [[ $# -eq 2 ]]; then
+# 	value=`badfunc1`
+# 	echo "The result is $value"
+# else
+# 	echo "Usage: badtest1 a b"
+# fi
+
+# function func7 {
+# 	echo $[ $1 * $2 ]
+# }
+
+# if [[ $# -eq 2 ]]; then
+# 	value=`func7 $1 $2`
+# 	echo "The result is $value"
+# else
+# 	echo "Usage: badtest1 a b"
+# fi
 
 
 
