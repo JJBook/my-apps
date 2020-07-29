@@ -163,7 +163,18 @@
 # 	count=$[ $count + 1 ]
 # done
 
-echo "别郁闷，下个才是最适合的。"
+# echo "别郁闷，下个才是最适合的。"
+# display dialog "$1" buttons {"OK"} default button 1 with icon caution with title "$(basename $0)"
+# function error() {
+#   osascript <<EOT
+#     tell app "System Events"
+#       display yesno "Is this thing on?" title "Please answer" 100 100
+#       return -- Suppress result
+#     end tell
+# EOT
+# }
+
+# error "abc"
 
 
 

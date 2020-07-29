@@ -926,35 +926,336 @@
 # 	echo "Usage: badtest1 a b"
 # fi
 
+# function db1 {
+# 	value=$[ $value * 2 ]
+# }
+
+# read -p "Enter a value: " value
+# db1
+# echo "The new value is: $value"
+
+# function func1 {
+# 	temp=$[ $value + 5 ]
+# 	result=$[ $temp * 2 ]
+# }
+
+# temp=4
+# value=6
+# func1
+# echo "The result is $result"
+# if [[ $temp -gt $value ]]; then
+# 	echo "temp is larger"
+# else
+# 	echo "temp is smaller"
+# fi
+
+# function func1 {
+# 	local temp=$[ $value + 5 ]
+# 	result=$[ $temp * 2 ]
+# }
+
+# value=6
+# func1
+# echo "The result is $result"
+# if [[ $temp -gt $value ]]; then
+# 	echo "temp is larger"
+# else
+# 	echo "temp is smaller"
+# fi
+
+# function testit {
+# 	echo "The paramters are: $@"
+# 	thisarray=$1
+# 	echo "The received array is ${thisarray[*]}"
+# }
+
+# myarray=(1 2 3 4 5)
+# echo "The original array is: ${myarray[*]}"
+# testit $myarray
+
+# function addarray {
+# 	local sum=0
+# 	local newarray
+# 	newarray=(`echo $@`)
+# 	for value in ${newarray[*]}; do
+# 		sum=$[ $sum + $value ]
+# 	done
+# 	echo $sum
+# }
+
+# myarray=(1 2 3 4 5)
+# echo "The original array is : ${myarray[*]}"
+# arg1=`echo ${myarray[*]}`
+# result=`addarray $arg1`
+# echo "The result is $result"
+
+# function arraydblr {
+# 	local origarray
+# 	local newarray
+# 	local elements
+# 	local i
+# 	origarray=(`echo "$@"`)
+# 	newarray=(`echo "$@"`)
+# 	elements=$[ $# - 1 ]
+# 	for (( i = 0; i <= $elements; i++ )); do
+# 		newarray[$i]=$[ ${origarray[$i]} * 2 ]
+# 	done
+# 	echo ${newarray[*]}
+# }
+
+# myarray=(1 2 3 4 5)
+# echo "The original array is: ${myarray[*]}"
+# arg1=`echo ${myarray[*]}`
+# result=(`arraydblr $arg1`)
+# echo "The new array is : ${result[*]}"
+
+# function factorial {
+# 	if [[ $1 -eq 1 ]]; then
+# 		echo 1
+# 	else
+# 		local temp=$[ $1 - 1 ]
+# 		local result=`factorial $temp`
+# 		echo $[ $result * $1 ]
+# 	fi
+# }
+
+# read -p "Enter value: " value
+# result=`factorial $value`
+# echo "The factorial of $value is: $result"
+
+# . ./myfuncs
+
+# value1=10
+# value2=5
+
+# result1=`addem $value1 $value2` 
+# result2=`multem $value1 $value2`
+# result3=`divem $value1 $value2`
+# echo "The result of adding this item: $result1"
+# echo "The result of multiplying the is: $result2"
+# echo "The result of divding them is: $result3"
+
+# function divem { echo $[ $1 / $2 ]; }
+# divem 100 5
+
+# function doubleit { read -p "Enter value: " value; echo "$value"; }
+
+# doubleit
+
+# clear
+# echo
+# echo -e "\t\t\tSys Admin Menu\n"
+# echo -e "\t1. Display disk space"
+# echo -e "\t2. Display logged on users"
+# echo -e "\t3. Display memory usage"
+# echo -e "\t0. Exit menu\n\n"
+# echo -en "\t\tEnter option:"
+
+# function diskspace {
+# 	clear
+# 	echo "This is where the diskspace commands will go"
+# }
+
+# function menu {
+# 	clear 
+# 	echo
+# 	echo -e "\t\t\tSys Admin Menu\n"
+# 	echo -e "\t1. Display disk space"
+# 	echo -e "\t2. Display logged on users"
+# 	echo -e "\t3. Display memory usage"
+# 	echo -e "\t0. Exit program\n\n"
+# 	echo -en "\t\tEnter option: "
+# 	read -n 1 option
+# }
+
+# menu
+
+# function diskspace {
+# 	clear
+# 	df -k
+# }
+
+# function whoseon {
+# 	clear
+# 	who
+# }
+
+# function menusage {
+# 	clear
+# 	cat testfile
+# }
+
+# function menu {
+# 	clear 
+# 	echo
+# 	echo -e "\t\t\tSys Admin Menu\n"
+# 	echo -e "\t1. Display disk space"
+# 	echo -e "\t2. Display logged on users"
+# 	echo -e "\t3. Display memory usage"
+# 	echo -e "\t0. Exit program\n\n"
+# 	echo -en "\t\tEnter option: "
+# 	read -n 1 option
+# }
+
+# while [[ 1 ]]
+# do
+# 	menu
+
+# 	case $option in
+# 	0) break ;;
+# 	1) diskspace ;;
+# 	2) whoseon ;;
+# 	3) menusage  ;;
+# 	*)
+# 		clear
+# 		echo "Sorry, wrong selection" ;;
+# 	esac
+# 	echo -en "\n\n\t\t\tHit any key to continue"
+# 	read -n 1 line
+# done
+
+# clear
+
+# function diskspace {
+# 	clear
+# 	df -k
+# }
+
+# function whoseon {
+# 	clear
+# 	who
+# }
+
+# function menusage {
+# 	clear 
+# 	cat testfile
+# } 
+
+# function menu {
+# 	clear 
+# 	echo
+# 	echo -e "\t\t\tSys Admin Menu\n"
+# 	echo -e "\t1. Display disk space"
+# 	echo -e "\t2. Display logged on users"
+# 	echo -e "\t3. Display memory usage"
+# 	echo -e "[[1m\t0. Exit program\n\n^[[0m^[[44;33m"
+# 	echo -en "\t\tEnter option: "
+# 	read -n 1 option
+# }
+
+# PS3="Enter option: "
+# select option in "Display disk space" "Display logged on users" "Display memory usage" "Exit program"
+# do
+# 	case $option in
+# 		"Exit program")
+# 			break ;;
+# 		"Display disk space")
+# 			diskspace ;;
+# 		"Display logged on users")
+# 			whoseon ;;
+# 		"Display memory usage")
+# 			menusage ;;
+# 		*)
+#  			clear
+#  			echo "Sorry, wrong selection" ;;	
+# 	esac
+# done
+# clear
+
+# ehco "^[[44;33m"
+# while [ 1 ] 
+# do
+# 	menu
+# 	case $option in
+# 		0)
+# 			break ;;
+# 		1)
+# 			diskspace ;;
+# 		2)
+# 			whoseon ;;
+# 		3)
+# 			menusage ;;
+# 		*)
+# 			clear
+# 			echo -e "^[[5m\t\t\tSorry, wrong selection^[[0m^[[44;33m" ;;
+# 	esac
+# 	echo -en "\n\n\t\t\tHit any key to continue"
+# 	read -n 1 line
+# done
+
+# echo "^[[0m"
+# clear
+
+# echo "[0m"
+
+# 1、升级、国际化
+# 2、新功能
+# 3、产品代码维护
+# 4、世界子包修改，管理
 
 
+# function error() {
+#   osascript <<EOT
+#     tell app "System Events"
+#       display dialog "$1" buttons {"OK","cancle"} default button 1 with icon caution with title "$(basename $0)"
+#       return -- Suppress result
+#     end tell
+# EOT
+# }
+
+# error "Not enough cheese!"
+
+# ./test1
+
+# echo "This is a test" | sed 's/test/big test/'
+
+# echo "This is a lazy dog" | sed 's/dog/cat/'
+
+# sed -e 's/taobao/拼夕夕/; s/zhihu/知乎/' testfile
+
+# awk -F ' ' '{print $1}' testfile
+
+# sed '/1/,/3/d' testfile
+
+# sed '3a\
+# This is my hourse' testfile
+
+# sed '$a\
+# This is a big base' testfile
+
+# sed '3a\
+# this is a test' testfile
+
+# sed '3c\
+# this is sed test' testfile
+
+# sed '2,10c\
+# This is sed test' testfile
+
+# sed 's/taobao/淘宝/' testfiles
+
+# sed -n "/taobao/p" testfile
+
+# sed -n "2,3p" testfile
+
+# 打印行号
+# sed '=' testfile
+
+# sed -n '/taobao/=' testfile
+
+# sed -n '/1/p' testfile
+
+# sed '2a \
+# \\n' testfile
+
+# sed '1,2w test' testfile3
 
 
+# echo "This is a test" | sed -n '/trial/p'
 
+# echo "This is a test" | awk '/test/{print $0}'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# echo "This is a test" | awk '/trial/{print $0}'
 
 
 
