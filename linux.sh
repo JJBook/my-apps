@@ -1257,11 +1257,121 @@
 
 # echo "This is a test" | awk '/trial/{print $0}'
 
+# echo "This is line number 1" | sed -n '/ber 1/p'
+
+# sed -n '/  /p' testfile
+
+# sed -n '/\?/p' testfile3
+
+# echo "3 / 2" | sed -n '/\//p'
+
+# echo "The book store" | sed -n '/^book/p'
+# echo "Books are great" | sed -n '/^Book/p'
+
+# sed -n '/^This/p' testfile
+
+# echo "This is a good book" | sed -n '/book$/p'
+# echo "There are a lot of good books" | sed -n '/book$/p'
+# sed -n '/^This is a test line$/p' testfile
+
+# sed -n '/.his/p' testfile
+
+# echo "Yes" | sed -n '/[Yy]es/p'
+# echo "yes" | sed -n '/[Yy]es/p'
+
+
+# echo "$txt" | awk -F '{print $1}' 
+
+# curl -s https://github.com/jingle1267/TianGou/blob/master/api | grep '<td id="LC1" class="blob-code blob-code-inner js-file-line">' | sed 's/&quot;//g' | awk -F ',' '{print $19}'
+
+# shell三剑客  grep awk sed
+
+# sed '/jjbook/n/d/} testfile
+
+# sed '/^$/d' testfile2 
+
+# sed 's/jjbook/JJBook/' testfile2
+
+# sed 'G' testfile2
+
+# sed "$!G" testfile2
+
+# sed '=' testfile2 | sed 'N; s/\n/ /'
+
+# sed -n '$p' testfile2
+
+# sed '/./,/^$/!d' testfile2
+
+# sed '/./,$!d' testfile2
+
+# echo "This is a test message" | mail -s "Test message" iris
+
+# df | sed -n '/\/$/p'
+
+# df | sed -n '/\/$/p' | awk '{print $5}'
+
+# SPACE=`df | sed -n '/\/$/p' | awk '{print $5}' | sed 's/%//'`
+# if [ $SPACE -ge 90 ]
+# then
+# 	echo "Disk space on root at $SPACE used" | mail -s 'Disk warning'
+# else
+# 	echo "Disk $SPACE used " | mail -s "success."
+# fi
+
+# du -s ./*
+
+# du -s ./* | grep -v lost
+
+# du -s ./* | grep -v lost | sed 's/\.\///'
+
+# du -s ./* | grep -v test | sed 's/\.\///' | sort -g -r 
+
+# TEMP=`mktemp -t temp.XXXXXX`
+
+# du -s ./* | grep -v test | sed 's/\.\///' | sort -g -r > $TEMP
+
+
+# TOTAL=`du -s ./* | awk '{print $1}'`
+
+# cat $TEMP | awk -v n="$TOTAL" '
+# BEGIN {
+# 	print "Total Disk Usage by User."
+# 	print "User\tSpace\tParcent"
+# }
+
+# {
+# 	printf "%s\t%d\t%6.2f%\n", $2, $1, ($1/n)*100
+# }
+
+# END {
+# 	print "-----------------------------------";
+# 	printf "Total\t%d\n", n
+# }
+# '
+
+# rm -f $TEMP
+
+# awk 'GEGIN 
+# {
+# 	printf "%4s %4s %4s %4s %4s %4s %4s %4s %4s\n","FILENAME","ARGC","FNR","FS","NF","NR","OFS","ORS","RS";
+# 	printf "-------------------------------------\n";
+# 	printf "%4s %4s %4s %4s %4s %4s %4s %4s %4s\n",FILENAME,ARGC,FNR,FS,NF,NR,OFS,ORS,RS
+# }
+# ' log.txt
+
+awk -F '\' '
+BEGIN{
+	printf "%4s %4s "
+}
+'
 
 
 
 
 
+
+
+ 
 
 
 
