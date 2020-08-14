@@ -1359,17 +1359,49 @@
 # }
 # ' log.txt
 
-awk -F '\' '
-BEGIN{
-	printf "%4s %4s "
-}
-'
+# awk '{print NR, FNR, $1, $2, $3}' log.txt
+
+# awk '{print $1, $2, $5}' OFS=' $ ' log.txt
+
+# awk '$2 ~ /th/ {print $2, $4}' log.txt
+
+# awk '/re/' log.txt
+
+# awk 'BEGIN {IGNORECASE=0} /this/' log.txt
+
+ # curl -s -o knickdog.html https://zhuanlan.zhihu.com/p/114503214 
+ # echo `cat knickdog.html` | sed 's/.*<div class="RichText ztext Post-RichText"//g' > abc.html
 
 
+# awk '
+# # 运行前
+# BEGIN { 
+# 	math = 0
+# 	english = 0
+# 	computer = 0
 
+# 	printf "NAME    NO.   MATH    ENGLISH    TOTAL\n"
+# 	printf "--------------------------------------\n"
+# }
+# # 运行中
+# {
+# 	math+=$3
+# 	english+=$4
+# 	computer+=$5
+# 	printf "%-6s %-6s %4d %8d %8d %8d\n", $1, $2, $3, $4, $5, $3+$4+$5
+# }
+# # 运行后
+# END {
+# 	printf "---------------------------------------\n"
+# 	printf "  TOTAL:%10d %8d %8d \n", math, english, computer
+# 	printf "AVERAGE: %10.2f %8.2f %8.2f\n", math/NR, english/NR, computer/NR
+# }' score.txt
 
+# ls -l score.txt | awk '{sum+=$5} END {print sum}'
 
+# awk 'length>80' log.txt
 
+# seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR, i*NR, i==NR?"\n":"\t")}'
 
  
 
