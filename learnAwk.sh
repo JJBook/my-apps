@@ -88,12 +88,12 @@
 # ls -l *.txt | awk '{sum+=$5} END{print sum}'
 # awk 'length > 20' log.txt
 
-seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR, NR*i, i==NR?"\n":"\t")}'
+# seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR, NR*i, i==NR?"\n":"\t")}'
 
-# awk 'BEGIN{printf "序号\t名字\t课程\t分数\n"}{print}' marks.txt
+awk 'BEGIN{printf "序号\t名字\t课程\t分数\n"}{print}' marks.txt
 
 # gsub、sub 使用
-awk 'BEGIN{info="this is a test2012test";gsub(/[0-9]+/, "||", info); print info}'
+# awk 'BEGIN{info="this is a test2012test";gsub(/[0-9]+/, "||", info); print info}'
 
 # awk 'BEGIN{
 # 	PI = 3.14159265
