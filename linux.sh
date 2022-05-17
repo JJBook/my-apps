@@ -1403,7 +1403,14 @@
 
 # seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR, i*NR, i==NR?"\n":"\t")}'
 
- 
+# grep -p "^\t" 1.txt
+
+# awk '{if($1 == 1) print $0; print $1}' 1.txt
+
+sed -n "/^\t/p" 1.txt
+
+
+
 
 
 
