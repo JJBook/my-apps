@@ -90,7 +90,7 @@
 
 # seq 9 | sed 'H;g' | awk -v RS='' '{for(i=1;i<=NF;i++)printf("%dx%d=%d%s", i, NR, NR*i, i==NR?"\n":"\t")}'
 
-awk 'BEGIN{printf "序号\t名字\t课程\t分数\n"}{print}' marks.txt
+# awk 'BEGIN{printf "序号\t名字\t课程\t分数\n"}{print}' marks.txt
 
 # gsub、sub 使用
 # awk 'BEGIN{info="this is a test2012test";gsub(/[0-9]+/, "||", info); print info}'
@@ -345,6 +345,83 @@ awk 'BEGIN{printf "序号\t名字\t课程\t分数\n"}{print}' marks.txt
 # awk '{ if ($0 ~ /file1:str2/) nextfile; print $0 }' marks.txt score.txt
 
 # awk 'BEGIN { ret = system("date"); print "Return value = " ret }'
+
+# 格式化空白
+# awk 'BEGIN{OFS="\t"}{$1=$1;print}' a.txt
+
+# 去重
+# awk -F "?" '!arr[$2]++{print}' a2.txt
+
+# 统计次数
+# awk '
+# {
+# 	arr[$1]++
+# }
+# END{
+# 	OFS="\t";
+# 	for(idx in arr){
+# 		printf("%10s:%d\n", idx, arr[idx])
+# 	}
+# }' a3.txt
+
+# 行转列
+# awk '
+# {
+# 	print NF
+# 	for(i=1;i<=NF;i++){
+# 		if(i in arr){
+# 			arr[i]=arr[i]" " $i
+# 		}else{
+# 			arr[i]=$i
+# 		}
+# 	}
+# }
+# END{
+# 	for(i=1;i<=NF;i++){
+# 		print arr[i]
+# 	}
+# }
+# ' a4.txt
+
+# 列转行
+# awk '
+# {
+# 	if($1 in arr){
+# 		arr[$1] = arr[$1] " "$2
+# 	}else{
+# 		arr[$1]=$2
+# 	}
+# }
+# END{
+# 	for(i in arr){
+# 		printf("%s%s\n", i, arr[i])
+# 	}
+# }
+# ' a5.txt
+
+# awk '
+# {
+# 	a[$1]++
+# 	b[$1"_"$2]++
+# }
+# END{
+# 	for(i in b){
+# 		split(i, c, "_");
+# 		print c[1], a[c[1]], c[2],b[i]
+# 	}
+# }
+# ' a6.txt
+
+# 正则命令匹配
+# awk '/^1.1.1.1/,/^1.1.1.4/' a6.txt
+
+# 统计命令
+awk '{print $1,$2}' a6.txt
+
+
+
+
+
 
 
 

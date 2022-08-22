@@ -1,0 +1,14 @@
+portmapper
+portmapper
+portmapper
+portmapper
+portmapper
+portmapper
+status
+status
+mountd
+mountd
+mountd
+mountd
+mountd
+mountd
