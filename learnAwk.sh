@@ -350,7 +350,7 @@
 # awk 'BEGIN{OFS="\t"}{$1=$1;print}' a.txt
 
 # 去重
-# awk -F "?" '!arr[$2]++{print}' a2.txt
+awk -F "?" '!arr[$2]++{print}' a2.txt
 
 # 统计次数
 # awk '
@@ -416,7 +416,7 @@
 # awk '/^1.1.1.1/,/^1.1.1.4/' a6.txt
 
 # 统计命令
-awk '{print $1,$2}' a6.txt
+# awk '{print $1,$2}' a6.txt
 
 
 
